@@ -1,7 +1,7 @@
 import styles from './Seguranca_Oficina.module.css';
 import garantiaIcon from '../img/Icone_garantia.png';
-import suporteIcon from '../img/icone_suporte.png';
-import qualidadeIcon from '../img/icone_qualidade.png';
+import suporteIcon from '../img/Icone_suporte.png';
+import qualidadeIcon from '../img/Icone_qualidade.png';
 
 export default function Seguranca_Oficina() {
   return (
