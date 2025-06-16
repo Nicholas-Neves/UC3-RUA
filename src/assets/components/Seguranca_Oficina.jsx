@@ -1,5 +1,5 @@
 import styles from './Seguranca_Oficina.module.css';
-import garantiaIcon from '../img/icone_garantia.png';
+import garantiaIcon from '../img/Icone_garantia.png';
 import suporteIcon from '../img/icone_suporte.png';
 import qualidadeIcon from '../img/icone_qualidade.png';
 
