@@ -1,6 +1,6 @@
 import Styles from './Meio.module.css'
 import foto from '../img/foto.png'
-import Faixa from '../img/Faixa.png'
+import Faixa from '../img/FAIXA.png'
 
 
 
