@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Styles from "./Timeline.module.css";
+import Styles from "./timeline.module.css";
 
 var LinhaDoTempo = () => {
   var circulos = useRef([]);
