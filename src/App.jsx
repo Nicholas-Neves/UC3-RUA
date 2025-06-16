@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import Arte from "./assets/pages/arte";
 import Sobre from "./assets/pages/sobre";
 import MusicPlayer from "./assets/components/MusicPlayer";
-import Oficina from "./assets/pages/oficina";
+import Oficina from "./assets/pages/Oficina";
 import Loja from "./assets/pages/loja";
 import Login from "./assets/pages/Login";
 import Inicio from "./assets/pages/inicio";
