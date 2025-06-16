@@ -1,6 +1,6 @@
 import Styles from "./Home.module.css";
 import foto from "../img/logoHome.png";
-import faixa from "../img/faixa.png";
+import faixa from "../img/FAIXA.png";
 import skate from "../img/skatespromo.png";
 import Sustentabilidade from "./Sustentabilidade";
 import Skates from "./Skates";
