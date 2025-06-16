@@ -1,0 +1,139 @@
+.footer {
+    background-color: #fff;
+    color: #333;
+    padding: 3rem 0 0;
+    border-top: 1px solid #eee;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  /* Logo e coluna esquerda */
+  .logoColumn {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .logo {
+    max-width: 160px; /* Reduzi um pouco o tamanho */
+    height: auto;
+  }
+  
+  /* Container dos links (direita) */
+  .linksContainer {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Espaço menor entre colunas */
+  }
+  
+  /* Colunas individuais */
+  .linksColumn {
+    min-width: 180px; /* Largura menor para mais colunas */
+    flex: 1;
+  }
+  
+  .columnTitle {
+    font-size: 1.1rem; /* Tamanho um pouco menor */
+    color: #000000;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .linksList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .link, .contactText {
+    color: #555;
+    text-decoration: none;
+    font-size: 0.95rem; /* Fonte um pouco menor */
+    line-height: 1.5; /* Espaçamento mais compacto */
+    transition: color 0.3s;
+    display: block; /* Garante alinhamento vertical */
+    margin-bottom: 0.6rem; /* Espaço menor entre itens */
+  }
+  
+  .link:hover {
+    color: #FFEA00;
+  }
+  
+  .socialIconsContainer {
+    display: flex;
+    gap: 0.8rem; /* Espaço menor entre ícones */
+    margin-top: 1.2rem;
+  }
+  
+  .socialIcon {
+    width: 32px; /* Ícones um pouco menores */
+    height: 32px;
+    transition: transform 0.3s;
+  }
+  
+  .socialLink:hover .socialIcon {
+    transform: scale(1.1);
+  }
+  
+  .copyright {
+    text-align: center;
+    padding: 1.2rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #eee;
+    color: #777;
+    font-size: 0.85rem;
+  }
+  
+  /* --- RESPONSIVIDADE --- */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 2rem 0 0;
+    }
+    
+    .container {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 0 1.5rem;
+    }
+    
+    .logoColumn {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    
+    .logo {
+      margin: 0 auto;
+    }
+    
+    .linksContainer {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .linksColumn {
+      text-align: center;
+      min-width: 100%;
+    }
+    
+    .columnTitle {
+      margin-bottom: 1rem;
+    }
+    
+    .linksList {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .socialIconsContainer {
+      justify-content: center;
+    }
+  }

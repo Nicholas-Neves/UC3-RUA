@@ -1,0 +1,33 @@
+.fundo {
+    width: 100%;
+    height: 100%;
+    background-color: #050505;
+  }
+  
+  .main-layout {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .sidebar,
+  .rightbar {
+    width: 20%;
+    height: 100%;
+    overflow: hidden; 
+  }
+  
+  .content {
+    width: 60%;
+    height: 100%;
+    overflow-y: auto; 
+    scroll-behavior: smooth;
+    padding: 24px;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }

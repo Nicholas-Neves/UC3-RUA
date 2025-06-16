@@ -1,0 +1,230 @@
+.perfil {
+    flex: 1;
+    color: white;
+    background-image: url(../img/background.png);
+    padding-bottom: 40px;
+  }
+  
+  .banner {
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/cato.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid #333;
+  }
+  
+  .perfil-topo {
+    position: relative;
+    padding: 0 32px;
+    margin-top: -60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #050505;
+    background-image: url(../img/debicon.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .botao-editar {
+    background-color: #ffd700;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .botao-editar:hover {
+    background-color: #e6c200;
+  }
+  
+  .perfil-info {
+    padding: 16px 32px;
+  }
+  
+  .perfil-info h2 {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  
+  .user {
+    color: #aaa;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .bio {
+    font-size: 16px;
+    margin-bottom: 12px;
+    max-width: 500px;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    color: #ccc;
+  }
+  
+  .abas {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #333;
+  }
+  
+  .aba {
+    padding: 12px 0;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    color: #ccc;
+    font-weight: bold;
+  }
+  
+  .aba.ativa {
+    color: #ffd700;
+    border-bottom: 3px solid #ffd700;
+  }
+  
+  .post {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    width: 65%;
+    height: 48vh;
+    margin-bottom: 24px;
+  }
+  
+  .post-header {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .nickicon {
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/debicon.jpg);
+    border-radius: 50%;
+  }
+  
+  .username {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .perfil p {
+    font-size: 24px;
+    color: #ccc;
+  }
+  
+  .nickimage {
+    width: 95%;
+    height: 73%;
+    background-image: url(../img/jinx.png);
+    background-position: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    margin: 12px 0;
+  }
+  
+  .post-actions {
+    display: flex;
+    gap: 16px;
+  }
+
+  .icon-like {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../img/like.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+  }
+
+  .icon-comment {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../img/comment.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+  }
+
+  .icon-share {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../img/share.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+  }
+  
+.conteudo{
+    flex: 1;
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    overflow-y:unset;
+}
+
+@media (max-width: 1366px) {
+    .perfil {
+      padding: 0 16px 40px 16px;
+    }
+  
+    .post {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto 24px auto;
+      height: auto;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+  
+    .nickimage {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      background-size: contain;
+    }
+  
+    .nickicon {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .perfil p {
+      font-size: 20px;
+    }
+  
+    .post-actions {
+      gap: 12px;
+    }
+  
+    .aba {
+      font-size: 14px;
+      padding: 10px 0;
+    }
+  }
+  
+  

@@ -1,0 +1,132 @@
+/* src/assets/Componentes/MandeSeuShape_Oficina.module.css */
+
+/* Container principal da seção */
+.mandeseushapeContainer {
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #000;
+    color: #fff;
+    height: auto;
+    width: 100%; /* ocupa toda a largura do contêiner pai */
+  }
+
+  h1 {
+    color: #ffea00;
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  
+  .containerTopico{
+    opacity: 0.8;
+    border-radius: 25px;
+    width: 50%;
+    height: 150px;
+    background-color: white;
+    color: #000;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & p{
+      font-size: 1.4rem;
+      width: 90%;
+    }
+  }
+  
+.containerInfo{
+  width: 90%;
+  height: 150px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  & p{
+    font-size: 2rem;
+  }
+  & h2{
+    font-size: 2.8rem;
+    color: #ffea00;
+  }
+}
+
+  /* Responsividade */
+  
+  /* Telas até 992px (notebooks) */
+  @media (max-width: 992px) {
+    .imageContainer {
+      width: 320px;
+      height: 320px;
+    }
+  }
+  
+  /* Telas até 768px (tablets) */
+  @media (max-width: 768px) {
+    .mandeseushapeContainer {
+      flex-direction: column;
+      height: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    .textContent {
+      margin-right: 0;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .title {
+      font-size: 32px;
+    }
+  
+    .description {
+      font-size: 16px;
+    }
+  
+    .button {
+      width: 150px;
+      height: 50px;
+      font-size: 1rem;
+    }
+  
+    .imageContainer {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  /* Telas pequenas (até 480px — celulares) */
+  @media (max-width: 480px) {
+    .imageContainer {
+      width: 180px;
+      height: 180px;
+    }
+  
+    .title {
+      font-size: 28px;
+    }
+  
+    .description {
+      font-size: 15px;
+    }
+  
+    .button {
+      width: 130px;
+      height: 45px;
+      font-size: 0.9rem;
+    }
+  }
+  

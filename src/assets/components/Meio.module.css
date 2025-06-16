@@ -1,0 +1,180 @@
+/*inicio da section*/
+.fundo {
+  width: 100%;
+  height: 1020px;
+  color: #fff;
+  background-color: #050505;
+  background-image: url(../img/background.png);
+  font-size: 30px;
+  align-items: center;
+  font-family: jost;
+}
+
+/*Inserção das imagem de ranking e video*/
+.rede {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+/*inicio do titulo street*/
+.moda {
+  color: white;
+  font-size: 35px;
+  text-align: right;
+  padding-right: 165px;
+  justify-content: space-around;
+  
+}
+
+
+/*inicio da div rede*/
+.fotoPrincipal {
+  background-size: cover;
+  width: 34%;
+  height: 340px;
+  
+}
+
+/*adicionação de texto*/
+.disc {
+  
+  font-size: 33px;
+  margin: 25px;
+  padding: 20px;
+}
+
+/*video*/
+.video{
+  width: 60%; 
+  height: 380px;
+
+}
+
+
+/*adicionação da faixa*/
+.faixa img {
+  width: 100%;
+  background-size: cover;
+}
+
+/*fim da section*/
+
+
+/*inicio da responsividade*/
+@media (max-width: 1024px) {
+  .moda {
+    font-size: 28px;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .fotoPrincipal {
+    width: 45%;
+    height: 300px;
+  }
+
+  .disc {
+    font-size: 24px;
+    padding: 15px;
+  }
+  .video {
+    width: 90%; 
+    height: 300px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .fundo {
+    font-size: 24px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .moda {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .rede {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 20px 0;
+  }
+
+  .fotoPrincipal {
+    width: 85%;
+    height: auto;
+  }
+
+  .disc {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .video {
+    width: 100%; 
+    height: 250px; 
+    display: block;
+    margin: 0 auto; 
+  }
+
+  .faixa img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .fundo {
+    font-size: 20px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .moda {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .rede {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+  }
+
+  .fotoPrincipal {
+    width: 90%;
+    height: auto;
+  }
+
+  .video {
+    width: 100%; 
+    height: 200px; 
+    display: block;
+    margin: 0 auto; 
+  }
+
+  .disc {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .faixa img {
+    width: 100%;
+    height: auto;
+  }
+}
+/*inicio da responsividade*/

@@ -1,0 +1,171 @@
+.wrapper {
+    width: 100%;
+    background-color: #000000;
+    padding: 5rem 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tituloPrincipal {
+    font-size: 3rem;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .destaque {
+    color: #FFEA00;
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  .beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+  
+  .beneficio {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid #333;
+  }
+  
+  .beneficio:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(255, 234, 0, 0.1);
+    border-color: #FFEA00;
+  }
+  
+  .iconeContainer {
+    width: 100px;
+    height: 100px;
+    background-color: #FFEA00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    padding: 1rem;
+  }
+  
+  .icone {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+  }
+  
+  .titulo {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .descricao {
+    color: #aaa;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.4rem;
+  }
+  
+  /* Responsividade Aprimorada */
+  @media (max-width: 1100px) {
+    .beneficios {
+      gap: 2rem;
+    }
+    
+    .beneficio {
+      padding: 2rem 1.5rem;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .beneficios {
+      grid-template-columns: repeat(2, minmax(250px, 1fr));
+    }
+    
+    .tituloPrincipal {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .wrapper {
+      padding: 4rem 0;
+    }
+    
+    .tituloPrincipal {
+      font-size: 2.2rem;
+      margin-bottom: 2.5rem;
+    }
+    
+    .beneficios {
+      gap: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .wrapper {
+      padding: 3rem 0;
+    }
+    
+    .beneficios {
+      grid-template-columns: 1fr;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 1.5rem;
+    }
+    
+    .beneficio {
+      padding: 2rem;
+    }
+    
+    .tituloPrincipal {
+      font-size: 2rem;
+    }
+    
+    .titulo {
+      font-size: 1.4rem;
+    }
+    
+    .descricao {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .container {
+      padding: 0 15px;
+    }
+    
+    .tituloPrincipal {
+      font-size: 1.8rem;
+    }
+    
+    .iconeContainer {
+      width: 70px;
+      height: 70px;
+    }
+    
+    .icone {
+      width: 45px;
+      height: 45px;
+    }
+  }

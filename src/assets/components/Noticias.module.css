@@ -1,0 +1,191 @@
+/* inicio da section*/
+.fundo {
+  width: 100%;
+  min-height: 100vh; 
+  color: #fff;
+  background-color: #050505;
+  background-image: url(../img/background.png);
+  padding: 15px;
+  font-family: jost;
+}
+
+/* Título */
+.texto {
+  color: white;
+  font-size: 30px;
+  padding: 50px;
+}
+
+/* Grid de cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Card individual */
+.card {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 15px;
+  gap: 20px;
+  padding: 20px;
+  color: white;
+  text-align: left;
+}
+
+/* Imagem */
+.imagem {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Conteúdo textual */
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Jost", sans-serif;
+  flex: 1;
+}
+
+.titulo {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+}
+
+.descricao {
+  font-size: 20px;
+  margin: 10px 0;
+  color: white;
+}
+
+.data {
+  font-size: 23px;
+  color: white;
+  margin-top: 0;
+}
+/*fim da section*/
+
+/*inicio da resposividade*/
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imagem {
+    width: 100%;
+    height: auto;
+  }
+
+  .conteudo {
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .titulo {
+    font-size: 20px;
+  }
+
+  .descricao {
+    font-size: 18px;
+  }
+
+  .data {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .texto {
+    font-size: 24px;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .imagem {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .titulo {
+    font-size: 18px;
+  }
+
+  .descricao,
+  .data {
+    font-size: 16px;
+  }
+
+  .conteudo {
+    padding: 0;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .texto {
+    font-size: 20px;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .grid {
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .imagem {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    border-radius: 15px;
+  }
+
+  .conteudo {
+    align-items: center;
+    padding: 0;
+  }
+
+  .titulo {
+    font-size: 16px;
+  }
+
+  .descricao {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+
+  .data {
+    font-size: 14px;
+  }
+}
+
+
+/*fim da section*/

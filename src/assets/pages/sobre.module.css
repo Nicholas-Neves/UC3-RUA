@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #000;
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.imagemContainer {
+  margin-top: 6rem;
+  background-image: url("../img/imagemtransparente1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.imagemContainer h1 {
+  color: #FFEA00;
+  font-size: 3.5rem;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.imagemContainer p {
+  color: #fff;
+  font-size: 2rem;
+  max-width: 90%;
+  line-height: 1.6;
+}
+
+.hhistoria {
+  color: white;
+  font-size: 3rem;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.mvv {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fundoMvv {
+  background-image: url("../img/Mvvimagem.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fundoMvv h1 {
+  font-size: 3rem;
+  color: #FFEA00;
+  margin-bottom: 0.5rem;
+}
+
+.fundoMvv p {
+  font-size: 1.5rem;
+  color: white;
+  line-height: 1.5;
+  max-width: 85%;
+  text-align: center;
+}
+
+.equipe {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 1rem;
+  padding: 1rem;
+}
+
+.equipe > div {
+  width: 23%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.equipe div div {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: initial;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.equipe h1 {
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.rafael { background-image: url("../img/Rafael.jpg"); }
+.ebson { background-image: url("../img/ebson.jpg"); }
+.gabi { background-image: url("../img/Gabi.jpg"); }
+.nicholas { background-image: url("../img/nicholas.jpg"); }
+.aline { background-image: url("../img/Aline.jpg"); }
+.correa { background-image: url("../img/Correa.jpg"); }
+.amani { background-image: url("../img/amani.jpg"); }
+.vinicius { background-image: url("../img/vinius.jpg"); }
+
+@media (max-width: 768px) {
+  .imagemContainer {
+    margin-top: 100px;
+    background-image: url("../img/imagemtransparente.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagemContainer h1 {
+    color: yellow;
+    font-size: 50px;
+    font-family: inter, black;
+  }
+
+  .imagemContainer p {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    width: 87%;
+    font-size: 24px;
+    font-family: bold, black;
+  }
+
+  .equipe {
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .equipe div {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    background-size: cover;
+    background-position: initial;
+  }
+
+  .equipe .rafael {
+    background-image: url("../img/Rafael.jpg");
+  }
+  .equipe .ebson {
+    background-image: url("../img/img/ebson.jpg");
+  }
+  .equipe .gabi {
+    background-image: url("../img/Gabi.jpg");
+  }
+  .equipe .nicholas {
+    background-image: url("../img/nicholas.jpg");
+  }
+  .equipe .aline {
+    background-image: url("../img/Aline.jpg");
+  }
+  .equipe .correa {
+    background-image: url("../img/Correa.jpg");
+  }
+  .equipe .amani {
+    background-image: url("../img/amani.jpg");
+  }
+
+  .equipe h1 {
+    color: white;
+    margin-bottom: 50px;
+  }
+
+  .fundoMvv {
+    margin-top: 200px;
+    width: 70%;
+    height: 90%;
+    padding: 50px;
+    background-image: url("../img/Mvvimagem.jpg");
+  }
+
+  .fundoMvv h1 {
+    font-size: 50px;
+    color: #FFEA00;
+  }
+
+  .fundoMvv p {
+    font-size: 24px;
+    color: white;
+    width: 90%;
+  }
+
+  .hhistoria {
+    display: none;
+  }
+}

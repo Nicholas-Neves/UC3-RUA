@@ -1,0 +1,15 @@
+.caixa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 50px; /* Espaço entre os produtos */
+    padding: 40px;
+    width: 75%;
+  }
+  
+  .faixa {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background-size: cover;
+    background-image: url("../img/FAIXA.png");
+  }

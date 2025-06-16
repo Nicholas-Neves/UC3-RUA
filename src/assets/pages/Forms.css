@@ -1,0 +1,80 @@
+.container {
+    width: 40%;
+    height: 540px;
+    margin: auto;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.inputl-fild {
+    position: relative;
+    width: 450px;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.inputl-fild input {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    text-align: start;
+    padding: 10px;
+}
+
+.inputl-fild input ::placeholder {
+    text-align: center;
+}
+
+.check {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5;
+    margin: -15px 0 15px;
+}
+
+.check input {
+    margin-right: -150px;
+}
+
+.check a {
+    color: black;
+}
+
+.check a:hover {
+    color: blue;
+}
+
+.entrar {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: #FFEA00;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+.entrar:hover{
+    background-color: #FFEA00;
+    width: 100%;
+    height: 45px;
+    box-shadow: 0px 0px 15px #FFD700;
+}
+.cadastra-se{
+    width: 100%;
+    height: 70px;
+    margin-top: 30px;
+}

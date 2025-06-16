@@ -1,0 +1,202 @@
+
+
+.wrapper {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 4rem 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .titulo {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .destaque {
+    color: #FFEA00;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  .faixaRua {
+    background-color: #222;
+    color: #fff;
+    padding: 1.5rem 0;
+    margin: 2rem 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .etapas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 3rem auto;
+    width: 100%;
+  }
+  
+  .etapa {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    padding: 2.5rem 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .etapa:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* .iconeContainer {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 50%;
+    padding: 1rem;
+  } */
+  
+  .icone {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+  
+  .etapaTitulo {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .etapaDescricao {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.3rem;;
+  }
+  
+  .botaoEnviar {
+    padding: 1.2rem 3rem;
+    background-color: #FFEA00;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .botaoEnviar:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+    color: white;
+    box-shadow: 0 5px 15px #FFEA00;
+  }
+  
+  .setaBotao {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .botaoEnviar:hover .setaBotao {
+    transform: translateX(5px);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .wrapper {
+      padding: 3rem 0;
+    }
+    
+    .titulo {
+      font-size: 2.2rem;
+    }
+    
+    .faixaRua {
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+    
+    .etapa {
+      min-width: 100%;
+      padding: 2rem 1.5rem;
+    }
+    
+    .botaoEnviar {
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  .faixaRua {
+  background-color: #222;
+  color: #fff;
+  padding: 1.5rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+
+.textoAnimado {
+  display: inline-block;
+  white-space: nowrap;
+  animation: deslizar 15s linear infinite;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+@keyframes deslizar {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+  
+  /* Animação de movimento do texto */
+  @keyframes rolarTexto {
+    0% {
+      transform: translateX(100%); /* Começa fora da tela pela direita */
+    }
+    100% {
+      transform: translateX(-100%); /* Move até sair pela esquerda */
+    }
+  }
+  
+  /* Aplica a animação ao texto */
+  .faixaRuaTexto {
+    display: inline-block;
+    white-space: nowrap;
+    animation: rolarTexto 20s linear infinite; /* Ajuste a duração conforme necessário */
+  }
+  

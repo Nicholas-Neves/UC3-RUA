@@ -1,0 +1,26 @@
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: rgba(30, 30, 30, 0.85);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .music-player:hover {
+    background-color: rgba(60, 60, 60, 0.85);
+  }
+  
+  .music-icon {
+    user-select: none;
+  }
+  

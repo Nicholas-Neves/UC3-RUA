@@ -1,0 +1,135 @@
+
+
+.produtoItem {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%; /* Não usar valor fixo como 460px */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/background.png);
+  box-sizing: border-box;
+}
+
+.imagem {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.Loja {
+  background-color: #7C7C7C;
+  background-image: url(../img/background.png);
+  background-size: cover;
+  padding: 20px;
+}
+
+.Filtro {
+  position: relative;
+  width: 20%;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.titulo, .h2 {
+  color: red;
+  font-size: 30px;
+}
+
+.titulo2 {
+  color: red;
+  font-size: 20px;
+}
+
+.p1, p2, p3 {
+  color: black;
+  font-size: 18px;
+}
+
+.input {
+  color: black;
+  font-size: 18px;
+}
+
+.titu {
+  align-items: center;
+  font-size: 40px;
+  text-align: center;
+
+}
+
+.promo {
+  font-size: 25px;
+  font-family: verdana;
+  color: #7C7C7C;
+  text-decoration: line-through;
+}
+
+.preco {
+  font-size: 50px;
+  color: red;
+}
+
+.desc {
+  font-size: 25px;
+}
+
+.comprar {
+  width: 100%;
+  height: 40px;
+  background-color: #ffea00;
+  border-radius: 30px;
+  font-size: 25px;
+  margin-top: 30px;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  transition: box-shadow 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.comprar:hover {
+  box-shadow: 0 0 20px rgb(255, 153, 0);
+}
+
+.faixa {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  background-size: cover;
+  background-image: url("../img/FAIXA.png");
+}
+
+.caixa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  padding: 40px;
+  width: 100%; /* Aproveita a tela toda */
+  box-sizing: border-box;
+}
+
+/*Tablets*/
+
+@media (max-width: 1024px) {
+  .caixa {
+    grid-template-columns: 1fr; 
+    padding: 20px;
+  }
+
+  .produtoItem {
+    width: 100%; 
+    margin: 0 auto;
+  }
+
+  .Filtro {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+
+

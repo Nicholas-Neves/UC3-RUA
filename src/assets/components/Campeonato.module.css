@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&');
+
+
+
+/*Inicio da primeira section*/
+.fundo {
+    width: 100%;
+    height: 380px;
+    color: #fff;
+    background-color: #050505;
+    background-image: url(../img/background.png);
+    font-size: 48px;
+    padding: 10px;
+    align-items: center;
+    font-family: jost;
+}
+
+/*titulo*/
+.fundo h1{
+    color: white;
+    padding: 18px;
+    
+}
+
+/*Inserção das imagens*/
+.games {
+    width: 24%;
+    height: 220px;
+    padding: 10px;
+    align-items: center;
+}
+
+.stu {
+  width: 24%;
+  height: 220px;
+  padding: 10px;
+  align-items: center;
+}
+
+.tampa {
+  width: 24%;
+  height: 220px;
+  padding: 10px;
+  align-items: center;
+}
+
+
+.dewtour {
+  width: 24%;
+  height: 220px;
+  padding: 10px;
+  align-items: center;
+}
+/* fim da section*/
+
+
+/*inicio da responsividade*/
+@media (max-width: 1024px) {
+  .fundo {
+    font-size: 32px;
+    padding: 20px;
+  }
+
+  .fundo h1 {
+    font-size: 36px;
+    padding: 10px;
+  }
+
+  .games {
+    width: 25%;
+    height: 145px;
+  }
+
+  .stu {
+    width: 25%;
+    height: 145px;
+  }
+
+  .tampa {
+    width: 25%;
+    height: 145px;
+  }
+
+  .dewtour {
+    width: 25%;
+    height: 145px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .fundo {
+    font-size: 28px;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .fundo h1 {
+    font-size: 28px;
+    padding: 10px;
+  }
+
+  .games {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .stu {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .tampa {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .dewtour {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .fundo {
+    font-size: 22px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .fundo h1 {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .games {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  .stu {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  .tampa {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  .dewtour {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+  }
+}
+
+/*fim da responsividade*/

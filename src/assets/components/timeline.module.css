@@ -1,0 +1,190 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 900px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+.containerLinha {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.wrapperLinha {
+  width: 100%;
+  position: relative;
+  padding: 100px 0;
+}
+
+.linha {
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  border-radius: 6px;
+  position: relative;
+}
+
+.marcos {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.wrapperCirculo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circulo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #857B07;
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.circuloAtivo {
+  background-color: #FFEB3B;
+  box-shadow: 0 0 25px #FFEB3B;
+}
+
+.conector {
+  position: absolute;
+  width: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.conectorAtivo {
+  background-color: #FFEB3B;
+  box-shadow: 0 0 10px #FFEB3B;
+}
+
+.conectorCima {
+  bottom: 100%;
+  height: 100px;
+}
+
+.conectorBaixo {
+  top: 100%;
+  height: 100px;
+}
+
+.containerInfo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.containerInfoCima {
+  bottom: 100%;
+  margin-bottom: -4px;
+}
+
+.containerInfoBaixo {
+  top: 100%;
+  margin-top: -4px;
+}
+
+.caixaInfo {
+  font-family: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding: 8px;
+  background-color: #bcae0b;
+  border-radius: 4px;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border-top: 4px solid rgba(255, 255, 255, 0.7);
+}
+
+.caixaInfoCima {
+  border-top: none;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.7);
+}
+
+.caixaInfoAtiva {
+  background-color: #FFEB3B;
+  box-shadow: 0 0 15px #FFEB3B;
+  border-color: #FFEB3B;
+}
+
+
+.textoExtra {
+  width: 200px;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.textoExtraAtivo {
+  color: #FFEB3B;
+  text-shadow: 0 0 8px #FFEB3B;
+}
+
+.raio {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 75px;
+  height: 40px;
+  background-image: url("../img/skate1.png");
+  background-position: center;
+  background-size: cover;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  animation: moverRaio 12s linear infinite, girar 0.4s linear;
+}
+
+@keyframes moverRaio {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes girar {
+  0% {
+    transform: translate(-50%, -50%) rotateX(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotateX(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateX(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+}

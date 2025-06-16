@@ -1,0 +1,188 @@
+.sidebar {
+    width: 20%;
+    height: 100vh;
+    background-color: #0a0a0a;
+    color: white;
+    display: flex;
+    overflow: hidden;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 100%;
+    height: 100px; 
+    background-image: url('../img/logorua.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 32px;
+  }
+  
+  
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .nav-item:hover {
+    background-color: #1a1a1a;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .icon-home{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/house-34.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+  }
+
+  .icon-search{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/search.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+  }
+
+  .icon-perfil{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/perfil.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+  }
+  .icon-bell{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/bell.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+  }
+
+  .icon-mail{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/mail.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+  }
+
+  span{
+    font-size: 25px;
+  }
+  
+  .logout-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #ffd700;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 16px 0;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #e6c200;
+  }
+  
+  .logout-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/voltar.png);
+    background-size: contain;
+    background-position: center;
+    border-radius: 4px;
+  }
+  
+ 
+  .sidebar-extra {
+    margin-top: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .mini-perfil {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .foto-usuario {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/debicon.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  
+  .info-usuario {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nome {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .arroba {
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  .btn-postar {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-postar:hover {
+    background-color: #ddd;
+  }
+  
+  .frase-missao {
+    font-size: 14px;
+    color: #aaa;
+    font-style: italic;
+    padding-right: 10px;
+  }
+
+  @media (max-width: 1366px) {
+    .sidebar-extra {
+      margin-top: 130px;
+      gap: 24px;
+    }
+  }

@@ -1,0 +1,58 @@
+.notificacoes {
+    flex: 1;
+    padding: 32px;
+    color: white;
+  }
+  
+  .titulo {
+    font-size: 32px;
+    margin-bottom: 24px;
+    font-weight: bold;
+  }
+  
+  .notificacao {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background-color: #111;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border-left: 4px solid #ffd700;
+  }
+  
+  .not-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #333;
+    border-radius: 8px;
+  }
+
+  .not-icon1 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/avatar-g.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+  }
+  
+  .not-icon2 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/nick-icon.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+  }
+
+  .not-texto p {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .not-texto span {
+    font-size: 14px;
+    color: #888;
+  }
+  
